@@ -7,7 +7,6 @@ function sendNotification(){
     {method: 'POST',});
   }
 
-  cron.schedule('59 13 * * *', () => {
-    console.log('aaaaaaaaaaaaa');
+  cron.schedule('0 20 * * *', () => {
     sendNotification();
   });
